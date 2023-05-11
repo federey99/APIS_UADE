@@ -1,29 +1,16 @@
-import React from 'react' // tipear "rafce" y enter
-
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Portfolio from './components/portfolio/Portfolio'
-import Services from './components/services/Services'
-import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
-
+import React from 'react' 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Main from './Main'
+import Login from './components/login/Login'
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   )
 }
 
