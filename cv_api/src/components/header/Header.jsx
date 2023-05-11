@@ -3,11 +3,15 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/profile-img.png'
 import HeaderSocials from './HeaderSocials'
+import {Link} from 'react-router-dom'
 
 
 const Header = () => {
   return (
     <header>
+    <Link to="/login">
+      <button className='solicitudes'>Solicitudes</button>
+    </Link>
       <div className="container header__container">
       <h5>Hola soy</h5>
       <h1>Federico Rey</h1>

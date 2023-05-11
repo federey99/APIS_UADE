@@ -24,7 +24,7 @@
 }
 
 .container-image {
-    background-color: gray;
+    background-color: var(--color-bg-variant);
     border-radius: 150px;
     align-items: center;
     display: flex;
