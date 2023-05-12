@@ -32,6 +32,10 @@
     margin-bottom: 1rem;
 }
 
+h5{
+    padding-bottom: 1rem;
+}
+
 /* ==================== MEDIA QUERYS (DISPOSITIVOS MEDIANOS) ==================== */
 
 @media screen and (max-width: 1024px){

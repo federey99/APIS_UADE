@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/profile-img.png'
+import ME from '../../assets/fede_foto2.png'
 import HeaderSocials from './HeaderSocials'
 import {Link} from 'react-router-dom'
 
