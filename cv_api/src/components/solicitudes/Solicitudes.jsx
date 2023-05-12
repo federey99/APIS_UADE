@@ -15,6 +15,7 @@ const Solicitudes = () => {
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
+                        <th>Apellido</th>
                         <th>Email</th>
                         <th>Mensaje</th>
                         <th>Teléfono</th>
@@ -25,18 +26,6 @@ const Solicitudes = () => {
                     <tr>
                         <td>xxxx</td>
                         <td>xxxx</td>
-                        <td>xxxx@gmail.com</td>
-                        <td>Hola, quiero contactarte</td>
-                        <td>xxxxxxxx</td>
-                        <td>
-                            <span><AiOutlineInfoCircle /></span>
-                            <span><AiOutlineCheckCircle /></span>
-                            <span><AiOutlineDelete /></span>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>xxxx</td>
                         <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
                         <td>Hola, quiero contactarte</td>
@@ -51,6 +40,7 @@ const Solicitudes = () => {
                     <tr>
                         <td>xxxx</td>
                         <td>xxxx</td>
+                        <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
                         <td>Hola, quiero contactarte</td>
                         <td>xxxxxxxx</td>
@@ -62,6 +52,21 @@ const Solicitudes = () => {
                     </tr>
 
                     <tr>
+                        <td>xxxx</td>
+                        <td>xxxx</td>
+                        <td>xxxx</td>
+                        <td>xxxx@gmail.com</td>
+                        <td>Hola, quiero contactarte</td>
+                        <td>xxxxxxxx</td>
+                        <td>
+                            <span><AiOutlineInfoCircle /></span>
+                            <span><AiOutlineCheckCircle /></span>
+                            <span><AiOutlineDelete /></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>xxxx</td>
                         <td>xxxx</td>
                         <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
