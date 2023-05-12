@@ -2,10 +2,12 @@ import React from 'react'
 import profile from "../../assets/usuario.png"
 import users from "../../assets/favicon.png"
 import pass from "../../assets/favicon.png"
+import { Link } from 'react-router-dom'
 import './login.css'
 
 const Login = () => {
-    var usr, pw = "admin";
+    var usr = "admin";
+    var pw = "admin";
 
     return (
         <div className='login'>
@@ -27,7 +29,9 @@ const Login = () => {
                             <input value={pw} type="password" placeholder='password' className='name' />
                         </div>
                         <div className='login-button'>
-                            <button>Login</button>
+                            <Link to="/solicitudes">
+                                <button>Login</button>
+                            </Link>
                         </div>
                         <p className='link'>
                             <a href="#">Forgot password?</a> Or <a href="#">Sign Up</a>
