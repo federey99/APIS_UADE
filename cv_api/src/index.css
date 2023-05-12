@@ -104,6 +104,15 @@ a:hover{
     color: var(--color-bg);
 }
 
+.btn-secondary{
+    padding: 8px 16px;
+    background-color: var(--color-bg-variant);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 img{
     display: block;
     width: 100%;
