@@ -1,6 +1,7 @@
 import React from 'react'
 import './solicitudes.css'
 import { AiOutlineInfoCircle, AiOutlineDelete, AiOutlineCheckCircle } from 'react-icons/ai'
+import Footer from '../footer/Footer'
 
 const Solicitudes = () => {
   return (
@@ -16,6 +17,7 @@ const Solicitudes = () => {
                         <th>Nombre</th>
                         <th>Email</th>
                         <th>Mensaje</th>
+                        <th>Teléfono</th>
                         <th>Opciones</th>
                     </tr>
                 </thead>
@@ -25,6 +27,7 @@ const Solicitudes = () => {
                         <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
                         <td>Hola, quiero contactarte</td>
+                        <td>xxxxxxxx</td>
                         <td>
                             <span><AiOutlineInfoCircle /></span>
                             <span><AiOutlineCheckCircle /></span>
@@ -37,6 +40,7 @@ const Solicitudes = () => {
                         <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
                         <td>Hola, quiero contactarte</td>
+                        <td>xxxxxxxx</td>
                         <td>
                             <span><AiOutlineInfoCircle /></span>
                             <span><AiOutlineCheckCircle /></span>
@@ -49,6 +53,7 @@ const Solicitudes = () => {
                         <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
                         <td>Hola, quiero contactarte</td>
+                        <td>xxxxxxxx</td>
                         <td>
                             <span><AiOutlineInfoCircle /></span>
                             <span><AiOutlineCheckCircle /></span>
@@ -61,6 +66,7 @@ const Solicitudes = () => {
                         <td>xxxx</td>
                         <td>xxxx@gmail.com</td>
                         <td>Hola, quiero contactarte</td>
+                        <td>xxxxxxxx</td>
                         <td>
                             <span><AiOutlineInfoCircle /></span>
                             <span><AiOutlineCheckCircle /></span>

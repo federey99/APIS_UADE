@@ -6,7 +6,8 @@ import {Link} from 'react-router-dom'
 import './login.css'
 
 const Login = () => {
-    var usr, pw = "admin";
+    var usr = "admin";
+    var pw = "admin";
 
     return (
         
@@ -30,7 +31,7 @@ const Login = () => {
                         </div>
                         <div className='login-button'>
                             <Link to="/solicitudes">
-                            <button>Login</button>
+                                <button>Login</button>
                             </Link>
                         </div>
                         <p className='link'>
