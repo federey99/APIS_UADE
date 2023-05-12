@@ -2,7 +2,7 @@ import React from 'react'
 import profile from "../../assets/usuario.png"
 import users from "../../assets/favicon.png"
 import pass from "../../assets/favicon.png"
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './login.css'
 
 const Login = () => {
@@ -10,6 +10,7 @@ const Login = () => {
     var pw = "admin";
 
     return (
+        
         <div className='login'>
             <div className='sub-login'>
                 <div>
@@ -40,6 +41,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        
     )
 }
 

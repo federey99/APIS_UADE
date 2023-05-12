@@ -39,6 +39,7 @@ const Contact = () => {
         <form action="">
           <input type="text" name='name' placeholder='Nombre completo' required />
           <input type="email" placeholder='Email' required />
+          <input type="phone" placeholder='Telefono' required />
           <textarea name="messege" rows="7" placeholder='Mensaje' required></textarea>
           <button type='submit' className='btn btn-primary'>Enviar Mensaje</button>
         </form>

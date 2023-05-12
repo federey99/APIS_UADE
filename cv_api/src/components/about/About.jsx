@@ -2,8 +2,8 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/profile-img.jpg'
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import {BiMap} from 'react-icons/bi'
+import {FaLanguage} from 'react-icons/fa'
 
 
 const About = () => {
@@ -28,24 +28,27 @@ const About = () => {
             </article>
 
             <article className="about__card">
-              <FiUsers className='about__icon'/>
-              <h5>Clientes</h5>
-              <small>200+ WorldWide</small>
+              <BiMap className='about__icon'/>
+              <h5>Localidad</h5>
+              <small>Buenos Aires, Argentina</small>
             </article>
 
             <article className="about__card">
-              <VscFolderLibrary className='about__icon'/>
-              <h5>Projectos</h5>
-              <small>80+ Projectos</small>
+              <FaLanguage className='about__icon'/>
+              <h5>Idiomas</h5>
+              <small>Español </small>
+              <small>Inglés</small>
             </article>
           </div>
 
-          <p> Me considero una persona creativa, responsable y
-              proactiva. Busco expandir mi experiencia profesional
-              y estoy predispuesto a aprender nuevas habilidades.
-              Me entusiasma el proceso de encontrar soluciones
-              efectivas a problemas y disfruto trabajar tanto en
-              tareas individuales como proyectos en equipo.
+          <p> Mi enfoque principal es el desarrollo de aplicaciones utilizando tecnologías modernas 
+          y mejores prácticas de la industria. Tengo un sólido conocimiento de lenguajes de 
+          programación como Java, Python y JavaScript, así como de frameworks y bibliotecas 
+          populares como Spring, Django y React.
+          Tengo un sólido conocimiento técnico, habilidades de diseño y arquitectura, 
+          experiencia en metodologías ágiles y una pasión por la resolución de problemas. 
+          Estoy entusiasmado por seguir creciendo profesionalmente y 
+          enfrentar nuevos desafíos en el campo del desarrollo de software.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Contactame</a>
