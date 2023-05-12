@@ -3,7 +3,7 @@
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #22bdff;
+    background-color: var(--color-bg-variant);
     text-shadow: 2px 2px #000;
     border-radius: 20px;
     margin: 5px;
@@ -11,6 +11,7 @@
 
 .tabla-solicitudes {
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 table {
@@ -30,7 +31,7 @@ table td {
 
 table th, 
 table td:first-child {
-    background-color: #22bdff;
+    background-color: var(--color-primary-variant);
     color: #fff;
     font-weight: 600;
     width: 100px;

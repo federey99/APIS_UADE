@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header>
     <Link to="/login">
-      <button className='solicitudes'>Solicitudes</button>
+      <button className='btn btn-secondary'>Solicitudes</button>
     </Link>
       <div className="container header__container">
       <h5>Hola soy</h5>
