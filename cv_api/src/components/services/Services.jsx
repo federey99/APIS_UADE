@@ -17,15 +17,15 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Capacidad para diseñar interfaces de usuario atractivas y centradas en el usuario utilizando herramientas de diseño gráfico y prototipado.</p>
+              <p>Capacidad para diseñar interfaces de usuario atractivas y centradas en el usuario final.</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Conocimientos de principios de diseño UI/UX, como la jerarquía visual, la usabilidad y la experiencia del usuario.</p>
+              <p>Conocimientos de principios de diseño UI/UX, como la usabilidad y la experiencia del usuario.</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Capacidad para realizar pruebas de usabilidad y recopilar comentarios de los usuarios para mejorar continuamente el diseño.</p>
+              <p>Capacidad para realizar pruebas de usabilidad y para mejorar continuamente el diseño.</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
