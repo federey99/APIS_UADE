@@ -23,12 +23,12 @@ const data = [
   },
   {
     avatar:AVTR2,
-    name:'Ignacio Fourcade',
+    name:'Valeria López',
     review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusamus quisquam natus est'
   },
   {
     avatar:AVTR3,
-    name:'Hernán Páez',
+    name:'Julieta Trujillo',
     review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusamus quisquam natus est'
   },
   {
