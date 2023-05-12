@@ -27,7 +27,7 @@ const Login = () => {
                             <input type="text" placeholder='user name' className='name'></input>
                         </div>
                         <div className='second-input'>
-                            <input  type="password" placeholder='password' className='name' />
+                            <input type="password" placeholder='password' className='name' />
                         </div>
                         <div className='login-button'>
                             <Link to="/solicitudes">

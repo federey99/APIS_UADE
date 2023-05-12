@@ -37,9 +37,10 @@ const Contact = () => {
         </div>
       {/*FIN DE OPCIONES DE CONTACTO*/}
         <form action="">
-          <input type="text" name='name' placeholder='Nombre completo' required />
+          <input type="text" name='name' placeholder='Nombre' required />
+          <input type="text" name='name' placeholder='Apellido' required />
           <input type="email" placeholder='Email' required />
-          <input type="phone" placeholder='Telefono' required />
+          <input type="phone" placeholder='Teléfono' required />
           <textarea name="messege" rows="7" placeholder='Mensaje' required></textarea>
           <button type='submit' className='btn btn-primary'>Enviar Mensaje</button>
         </form>
