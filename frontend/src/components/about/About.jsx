@@ -24,20 +24,21 @@ const About = () => {
             <article className="about__card">
               <FaAward className='about__icon'/>
               <h5>Experiencia</h5>
-              <small>3+ Años</small>
+              <small style={{ display: 'block' }}>3+ Años</small>
+              <small style={{ display: 'block' }}>Finnegans SA </small>
             </article>
 
             <article className="about__card">
               <BiMap className='about__icon'/>
               <h5>Localidad</h5>
-              <small>Buenos Aires, Argentina</small>
+              <small >Buenos Aires, Argentina</small>
             </article>
 
             <article className="about__card">
               <FaLanguage className='about__icon'/>
               <h5>Idiomas</h5>
-              <small>Español </small>
-              <small>Inglés</small>
+              <small style={{ display: 'block' }}>Español - Nativo</small>
+              <small style={{ display: 'block' }}>Inglés - Avanzado</small>
             </article>
           </div>
 

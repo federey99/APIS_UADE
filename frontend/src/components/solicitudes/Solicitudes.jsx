@@ -2,6 +2,7 @@ import React from 'react'
 import './solicitudes.css'
 import { AiOutlineInfoCircle, AiOutlineDelete, AiOutlineCheckCircle } from 'react-icons/ai'
 import Footer from '../footer/Footer'
+import {Link} from 'react-router-dom'
 
 const Solicitudes = () => {
   return (
@@ -80,6 +81,9 @@ const Solicitudes = () => {
                     </tr>
                 </tbody>
             </table>
+                <Link to="/">
+            <button className='btn btn-secondary'>Volver</button>
+                </Link>
         </div>
     </div>
   )
