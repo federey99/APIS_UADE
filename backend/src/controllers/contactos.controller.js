@@ -1,7 +1,5 @@
-require('dotenv').config();
-//const jwt = require("jsonwebtoken")
+
 const ContactosService = require("../services/contactos.service");
-//const AuthService = require('../services/auth.service')
 
 
 class ContactosController{
@@ -16,7 +14,7 @@ class ContactosController{
             return res.status(500).json({
                 method: "getContacts",
                 message: err,
-            })
+            });
         }
     }
 
@@ -39,6 +37,24 @@ class ContactosController{
             })
         }
     }
+
+    async createContacto(req,res){
+        try{
+            let newContact = await ContactosService.createContact(req.body);
+
+            return res.status(201).json({
+                message:"Posted!",
+                contacto:newContact,
+            });
+        }catch (err){
+            console.error(err);
+            return res.status(500).json({
+                method:"createContacto",
+                messege: err.message,
+            })
+        }
+    }
+
 }
 
 module.exports = new ContactosController();

@@ -22,5 +22,16 @@ class ContactosService{
         }
     }
 
+    async createContact(contact) {
+        try {
+          let savedContact = await ContactosModel.create(contact);
+          return savedContact;
+        
+        } catch (err) {
+          console.error(err);
+          throw new Error("Error in createContact Service",err);
+        }
+      }
+
 }
 module.exports = new ContactosService();
