@@ -1,11 +1,12 @@
 require('dotenv').config()
 const express = require ('express');
 const {dbConnection} = require('./src/db/config');
-//{dbConnection};
+const cors = require('cors');
 
 const app = express();
 dbConnection();
 
+app.use(cors());
 app.use(express.urlencoded({extended: true })); //estas 2 lineas nos permiten parsear una request a un formato json.
 app.use(express.json());
 
