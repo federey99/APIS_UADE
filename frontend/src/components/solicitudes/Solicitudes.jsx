@@ -37,7 +37,7 @@ const Solicitudes = () => {
                 <h1>Mis Solicitudes</h1>
             </div>
             <Link to="/">
-                <button className='btn btn-secondary'>Volver</button>
+                <button className='btn btn-secondary'>Log Out</button>
             </Link>
             <div className='tabla-solicitudes'>
                 <table>
