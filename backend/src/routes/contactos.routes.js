@@ -11,8 +11,7 @@ router.get('/',
 [
     check('jwt').not().isEmpty(),
     checkFields
-],
-jwtValidator,contactosController.getContactos);//GET CONTACTOS
+],jwtValidator,contactosController.getContactos);//GET CONTACTOS
 
 router.get('/:id',[
     check('jwt').not().isEmpty(),
@@ -20,13 +19,13 @@ router.get('/:id',[
 ],jwtValidator,contactosController.getContactosByID);//GET CONTACTOS BY ID
 
 router.post('/',[ // POST CONTACTOS
-    //check('jwt').not().isEmpty(),
-    check('Nombre').not().isEmpty(),
-    check('Apellido').not().isEmpty(),
-    check('Domicilio').not().isEmpty(),
-    check('Mail').not().isEmpty(),
-    check('Mensaje').not().isEmpty(),
+    //check('jwt').not().isEmpty(), 
+    check('nombre').not().isEmpty(),
+    check('apellido').not().isEmpty(),
+    check('email').not().isEmpty(),
+    check('telefono').not().isEmpty(),
+    check('mensaje').not().isEmpty(),
     checkFields
-],jwtValidator,contactosController.createContacto);
+],jwtValidator,contactosController.createContacto); // SI A ESTA LINEA LE SACO EL jwtValidator FUNCIONA!!! jwtValidator,
 
 module.exports = router;

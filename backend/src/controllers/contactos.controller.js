@@ -1,8 +1,7 @@
-
 const ContactosService = require("../services/contactos.service");
 
 
-class ContactosController{
+class ContactosController {
 
     async getContactos(req,res){
         try{

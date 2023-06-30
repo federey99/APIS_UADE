@@ -81,7 +81,7 @@ const Login = () => {
             </div>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <p className='link'>
-              <a href="#">Forgot password?</a> Or <a href="#">Sign Up</a>
+              <a href="#">Forgot password?</a> Or <Link to="/registro"><a href="#">Sign Up</a></Link>
             </p>
           </div>
         </div>
