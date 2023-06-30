@@ -3,7 +3,6 @@ const jwt = require("jsonwebtoken")
 const UsuariosService = require("../services/usuarios.service");
 const AuthService = require('../services/auth.service')
 
-
 class UsuariosController{
 
     async getUsuarios(req,res){
@@ -46,6 +45,7 @@ class UsuariosController{
             let newUser = await UsuariosService.createUser(req.body);
 
             return res.status(201).json({
+                status:201,
                 message:"Created!",
                 usuario:newUser,
             });
@@ -53,7 +53,8 @@ class UsuariosController{
             console.error(err);
             return res.status(500).json({
                 method:"createUsuario",
-                messege: err.message,
+                //messege: err.message,
+                message: "User already registred"
             })
         }
     }

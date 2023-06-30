@@ -2,13 +2,13 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const ContactosSchema = new Schema({
-    Nombre:String,
-    Apellido:String,
-    Domicilio:String,
-    Mail:String,
-    Mensaje:String    
+    nombre:String,
+    apellido:String,
+    email:String,
+    telefono:String,
+    mensaje:String  
 });
 
-const Contactos = mongoose.model('Contactos',ContactosSchema);
+const Contactos = mongoose.model('contactos',ContactosSchema);
 
 module.exports = Contactos;

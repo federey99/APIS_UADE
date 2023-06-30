@@ -7,7 +7,7 @@ const checkFields = require("../middlewares/validateFields");
 
 router.get("/",usuariosController.getUsuarios);//GET usuarios
 router.get("/:id",usuariosController.getUsuariosByID);//GET usuarios BY ID
-//router.post("/", usuariosController.createUsuario); // POST usuarios
+router.post("/", usuariosController.createUsuario); // POST usuarios
 
 router.post("/login",
     [
@@ -18,7 +18,7 @@ router.post("/login",
     usuariosController.login);
 
 
-router.post('/',
+router.post('/register',
     [
         check("name").not().isEmpty(),
         check("lastname").not().isEmpty(),
