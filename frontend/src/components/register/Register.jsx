@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from 'react'
-import {Link, useNavigate} from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import register from '../../api/register.api';
 import profile from "../../assets/usuario.png"
+import './register.css'
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -31,7 +32,13 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    let response = await register(name,lastname,email,password);
+    // Validar el campo de correo electrónico
+    if (!validateEmail(email)) {
+      setErrorMessage('Correo electrónico inválido');
+      return;
+    }
+
+    let response = await register(name, lastname, email, password);
     console.log(response);
     sessionStorage.setItem("access-token", response.token);
     console.log('Name:', name);
@@ -53,19 +60,26 @@ const Register = () => {
     }
   }, [registrado, navigate]);
 
+  // Función de validación de correo electrónico
+  const validateEmail = (email) => {
+    // Expresión regular para validar el correo electrónico
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
   return (
-    <div className='login'>
+    <div className='register'>
       <Link to="/">
         <button className='btn-secondary'>Volver</button>
       </Link>
-      <div className='sub-login'>
+      <div className='sub-register'>
         <div className='imgs'>
           <div className='container-image'>
             <img src={profile} alt="profile" className='profile' />
           </div>
         </div>
         <div>
-          <h1 className="titulo-login">Register</h1>
+          <h1 className="titulo-register">Sign Up</h1>
           <div className='second-input'>
             <input
               type="name"
@@ -84,7 +98,7 @@ const Register = () => {
               onChange={handleLastNameChange}
             />
           </div>
-          <div>
+          <div className='second-input'>
             <input
               type="email"
               placeholder='Email'
@@ -102,13 +116,10 @@ const Register = () => {
               onChange={handlePasswordChange}
             />
           </div>
-          <div className='login-button'>
-            <button type="submit" className='btn-primary' onClick={handleRegister}>Register</button>
+          <div className='register-button'>
+            <button type="submit" className='btn-primary' onClick={handleRegister}>Sign Up</button>
           </div>
           {errorMessage && <p className="error-message">{errorMessage}</p>}
-          <p className='link'>
-            <a href="#">Forgot password?</a> Or <a href="#">Sign Up</a>
-          </p>
         </div>
       </div>
     </div>

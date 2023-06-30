@@ -9,14 +9,14 @@ const jwtValidator = require('../middlewares/jwtValidator');
 
 router.get('/',
 [
-    check('jwt').not().isEmpty(),
+    //check('jwt').not().isEmpty(),
     checkFields
-],jwtValidator,contactosController.getContactos);//GET CONTACTOS
+],contactosController.getContactos);//GET CONTACTOS ,jwtValidator
 
 router.get('/:id',[
-    check('jwt').not().isEmpty(),
+    //check('jwt').not().isEmpty(),
     checkFields
-],jwtValidator,contactosController.getContactosByID);//GET CONTACTOS BY ID
+],contactosController.getContactosByID);//GET CONTACTOS BY ID ,jwtValidator
 
 router.post('/',[ // POST CONTACTOS
     //check('jwt').not().isEmpty(), 
@@ -26,6 +26,6 @@ router.post('/',[ // POST CONTACTOS
     check('telefono').not().isEmpty(),
     check('mensaje').not().isEmpty(),
     checkFields
-],jwtValidator,contactosController.createContacto); // SI A ESTA LINEA LE SACO EL jwtValidator FUNCIONA!!! jwtValidator,
+],contactosController.createContacto); // SI A ESTA LINEA LE SACO EL jwtValidator FUNCIONA!!! jwtValidator,
 
 module.exports = router;

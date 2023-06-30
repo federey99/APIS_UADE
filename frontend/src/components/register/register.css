@@ -1,4 +1,4 @@
-.login {
+.register {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -6,10 +6,11 @@
     background-color: #1f1f38;
 }
 
-.sub-login {
+.sub-register {
     /*display: flex;*/
     justify-content: center;
-    height: 550px;
+    /*height: 550px;*/
+    height: 650px;
     width: 35%;
     box-shadow: 5px 5px 12px 1px black;
     padding-top: 30px;
@@ -38,7 +39,7 @@
     border-radius: 130px;
 }
 
-.titulo-login {
+.titulo-register {
     padding-top: 5px;
     padding-bottom: 10px;
 }
@@ -62,7 +63,7 @@ input {
 }
 
 .name {
-    padding-left: 45px;
+    /*padding-left: 45px;*/
     font-size: 18px;
 }
 
@@ -81,15 +82,15 @@ button {
     cursor: pointer;
 }
 
-.login-button {
+.register-button {
     padding-top: 25px;
 }
 
-.link {
+/*.link {
     padding-top: 40px;
     font-size: 20px;
     font-weight: 400;
-}
+}*/
 
 /* ==================== MEDIA QUERYS (DISPOSITIVOS ) ==================== */
 
