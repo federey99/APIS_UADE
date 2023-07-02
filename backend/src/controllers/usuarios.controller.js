@@ -77,7 +77,7 @@ class UsuariosController{
                 });
             }else{
                 return res.status(401).json({
-                    message: "Unauthorized3.",
+                    message: "Email o contraseña incorrectos.",
                 });
             }
         }catch (err){
@@ -86,21 +86,6 @@ class UsuariosController{
     }
 
 
-    /*
-    async createUsuario(req, res) {
-    try {
-      const {  name, lastname, email, password } = req.body; // Obtén los datos del cuerpo de la solicitud
-      const newUser = await UsuariosService.createUser( name, lastname, email, password );
-      //console.log(req.body)
-      return res.status(201).json(newUser);
-    } catch (err) {
-      console.error(err);
-      return res.status(500).json({
-        method: "createUsuario",
-        message: err.message,
-      });
-    }
-  }*/
 
 }
 

@@ -91,23 +91,35 @@ button {
     font-weight: 400;
 }
 
+
+
 /* ==================== MEDIA QUERYS (DISPOSITIVOS ) ==================== */
 
-@media screen and (max-width: 1024px){
-    header{
-        min-height: 68vh;
+@media screen and (max-width: 1024px) {
+    .login {
+      min-height: 68vh;
     }
-    
-}
+
+    .sub-login{
+        width: unset;
+        padding: 30px;
+    }
+  }
+
 
 /* ==================== MEDIA QUERYS (DISPOSITIVOS PEQUEÑOS) ==================== */
 
-@media screen and (max-width: 600px){
-    header{
-        height: 130vh;
-    }
-    .header__socials, .scroll__down{
-        display: none;
-    }
 
-}
+  
+  @media screen and (max-width: 600px) {
+    .login {
+      height: 130vh;
+    }
+    
+
+  
+    .header__socials,
+    .scroll__down {
+      display: none;
+    }
+  }

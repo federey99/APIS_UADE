@@ -56,7 +56,7 @@ const Register = () => {
 
   useEffect(() => {
     if (registrado) {
-      navigate("/solicitudes");
+      //navigate("/solicitudes");
     }
   }, [registrado, navigate]);
 
@@ -69,7 +69,7 @@ const Register = () => {
 
   return (
     <div className='register'>
-      <Link to="/">
+      <Link to="/Login">
         <button className='btn-secondary'>Volver</button>
       </Link>
       <div className='sub-register'>

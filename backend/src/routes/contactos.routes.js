@@ -5,18 +5,18 @@ const checkFields = require("../middlewares/validateFields");
 const contactosController = require('../controllers/contactos.controller');
 const jwtValidator = require('../middlewares/jwtValidator');
 
-//const router = Router();
+
 
 router.get('/',
 [
     //check('jwt').not().isEmpty(),
     checkFields
-],contactosController.getContactos);//GET CONTACTOS ,jwtValidator
+],contactosController.getContactos);//GET CONTACTOS
 
 router.get('/:id',[
     //check('jwt').not().isEmpty(),
     checkFields
-],contactosController.getContactosByID);//GET CONTACTOS BY ID ,jwtValidator
+],contactosController.getContactosByID);//GET CONTACTOS BY ID
 
 router.post('/',[ // POST CONTACTOS
     //check('jwt').not().isEmpty(), 
@@ -26,6 +26,6 @@ router.post('/',[ // POST CONTACTOS
     check('telefono').not().isEmpty(),
     check('mensaje').not().isEmpty(),
     checkFields
-],contactosController.createContacto); // SI A ESTA LINEA LE SACO EL jwtValidator FUNCIONA!!! jwtValidator,
+],contactosController.createContacto); 
 
 module.exports = router;
