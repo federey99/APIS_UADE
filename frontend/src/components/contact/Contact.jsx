@@ -109,7 +109,7 @@ const Contact = () => {
           </article>
         </div>
         {/*FIN DE OPCIONES DE CONTACTO*/}
-        <form action="">
+        <form className='contact-form' action="">
           <input type="text" name='name' placeholder='Nombre' value={nombre} onChange={handleNombreChange} required />
           <input type="text" name='name' placeholder='Apellido' value={apellido} onChange={handleApellidoChange} required />
           <input type="email" placeholder='Email' value={email} onChange={handleEmailChange} required />

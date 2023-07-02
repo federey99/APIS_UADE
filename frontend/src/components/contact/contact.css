@@ -11,6 +11,8 @@
     gap: 1.2rem;
 }
 
+
+
 .contact__option{
     background: var(--color-bg-variant);
     padding: 1.2rem;
@@ -36,6 +38,14 @@
     font-size: 0.8rem;
 }
 
+.contact-form input{
+    width: 100%;
+}
+
+.contact-form button{
+    margin: 0 auto;
+}
+
 /* ==================== FORM ==================== */
 
 form{
@@ -55,6 +65,14 @@ input, textarea{
     font-size: 1rem;
 }
 
+/* ==================== MEDIA QUERYS (DISPOSITIVOS GRANDES) ==================== */
+
+@media screen and (1024px < width < 1600px){
+    .contact__options h5{
+        font-size: 16px;
+    }
+}
+
 
 /* ==================== MEDIA QUERYS (DISPOSITIVOS MEDIANOS) ==================== */
 
@@ -63,6 +81,8 @@ input, textarea{
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+
 }
 
 /* ==================== MEDIA QUERYS (DISPOSITIVOS PEQUEÑOS) ==================== */
@@ -72,3 +92,4 @@ input, textarea{
         width: var(--container-width-sm);
     }
 }
+
