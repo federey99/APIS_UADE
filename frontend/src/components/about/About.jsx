@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/profile-img.jpg'
+import ME from '../../assets/profile-img2.jpeg'
 import {FaAward} from 'react-icons/fa'
 import {BiMap} from 'react-icons/bi'
 import {FaLanguage} from 'react-icons/fa'

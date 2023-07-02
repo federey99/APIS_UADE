@@ -47,7 +47,7 @@ const Solicitudes = () => {
                             <th>Nombre</th>
                             <th>Apellido</th>
                             <th>Email</th>
-                            <th>Mensaje</th>
+                            <th className='mensajes'>Mensaje</th>
                             <th>Teléfono</th>
                             <th>Opciones</th>
                         </tr>
@@ -70,9 +70,10 @@ const Solicitudes = () => {
                         ))}
                     </tbody>
                 </table>
-                <Footer></Footer>          
             </div>
+            <Footer></Footer> 
         </div>
+        
     )
 }
 

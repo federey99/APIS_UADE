@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 const Header = () => {
   return (
     <header>
-    <Link to="/login">
+    <Link className='btn-etiqueta' to="/login">
       <button className='btn btn-secondary'>Solicitudes</button>
     </Link>
       <div className="container header__container">
