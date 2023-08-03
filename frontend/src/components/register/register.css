@@ -94,19 +94,21 @@ button {
 
 /* ==================== MEDIA QUERYS (DISPOSITIVOS ) ==================== */
 
-@media screen and (max-width: 1024px){
-    header{
-        min-height: 68vh;
+@media screen and (max-width: 1024px) {
+    .register {
+      min-height: 68vh;
     }
-    
-}
+
+    .sub-register{
+        width: unset;
+        padding: 30px;
+    }
+  }
 
 /* ==================== MEDIA QUERYS (DISPOSITIVOS PEQUEÑOS) ==================== */
 
 @media screen and (max-width: 600px){
-    header{
-        height: 130vh;
-    }
+
     .header__socials, .scroll__down{
         display: none;
     }
